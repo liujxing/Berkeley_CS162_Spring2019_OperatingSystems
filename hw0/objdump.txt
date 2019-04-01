@@ -1,0 +1,12 @@
+What file format is used for this binary? And what architecture is it compiled for?
+Answer: The format is elf64-x86-64, the architecture is i386:x86-64, flags 0x00000112: EXEC_P, HAS_SYMS, D_PAGED
+
+What are some of the names of segment/sections you find?
+Answer: Program header, dynamic section, version reference, sections, symbol table, disassembly of section .init, disassembly of section .plt, disassembly of section .txt, disassembly of section fini.
+
+What segment/section contains main (the function) and what is the address of main? (It should be the same as what you saw in gdb)
+Answer: The main is dumped in SYMBOL TABLE section, and main has the address of 000000000040064d which is the same as using gdb.
+
+Do you see the stack segment anywhere? What about the heap? Explain.
+Answer: There is not stack and heap, becuase they are runtime concepts that are created dynamically, and does not exist in the executable when not running.
+

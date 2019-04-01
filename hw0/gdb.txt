@@ -1,0 +1,19 @@
+What is the value of argv?
+Answer: argv = 0x7fffffffe608
+
+What is the value of argv[0]?
+Answer: argv[0] = 0x7fffffffe83a "/home/vagrant/code/personal/hw0/wc"
+
+What is the address of function main?
+Answer: 0x40064d
+
+Try info stack. Explain what you see.
+Answer: "info stack" shows the current stack, which only contains main function since there is no other function call.
+
+Try info frame. Explain what you see.
+Answer: "info frame" shows the current stackframe, which contains arglist and local variables at 0x7fffffffe520
+
+Try info registers. Which registers are holding aspects of the program that you recognize?
+Answer: The registers use register rip to hold the main function, register rbp to hold the input arguments and the local variables.
+
+

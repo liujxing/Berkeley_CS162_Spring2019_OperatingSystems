@@ -1,0 +1,22 @@
+_main  @ 0x4005c2
+recur @ 0x40057d
+_main stack: 0x7ffef30c4f0c
+static data: 0x601048
+Heap: malloc 1: 0xc14010
+Heap: malloc 2: 0xc14080
+recur call 3: stack@ 0x7ffef30c4edc
+recur call 2: stack@ 0x7ffef30c4eac
+recur call 1: stack@ 0x7ffef30c4e7c
+recur call 0: stack@ 0x7ffef30c4e4c
+
+Use objdump with the -D flag on the map executable. Which of the addresses from the output of running ./map are defined in the executable, and which segment/section is each defined in?
+
+
+Make a list of the important segments, and what they are used for (look up their names on the Internet if you don’t know).
+What direction is the stack growing in?
+
+How large is the stack frame for each recursive call?
+
+Where is the heap? What direction is it growing in?
+
+Are the two malloc()ed memory areas contiguous? (e.g. is there any extra space between their addresses?)
